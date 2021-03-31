@@ -2,7 +2,7 @@
 <info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
     <id>ocjobs</id>
-    <name>Oc Jobs</name>
+    <name>OC Jobs</name>
     <summary>OC Jobs</summary>
     <description><![CDATA[OC Jobs]]></description>
     <version>0.0.1</version>
@@ -12,11 +12,11 @@
     <category>tools</category>
     <bugs>http://localhost/nextcloud/</bugs>
     <dependencies>
-        <nextcloud min-version="15" max-version="15"/>
+        <nextcloud min-version="15" max-version="21"/>
     </dependencies>
     <navigations>
         <navigation>
-            <name>Oc Jobs</name>
+            <name>OC Jobs</name>
             <route>ocjobs.page.index</route>
         </navigation>
     </navigations>

@@ -7,9 +7,11 @@
  * The controller class has to be registered in the application.php file since
  * it's instantiated in there
  */
+
+// curl -X GET http://admin:password@localhost/nextcloud/ocs/v1.php/api/ocjobs/list -H "OCS-APIRequest: true"
+
 return [
-    'routes' => [
-	   ['name' => 'page#index', 'url' => '/', 'verb' => 'GET'],
-	   ['name' => 'page#do_echo', 'url' => '/echo', 'verb' => 'POST'],
-    ]
+    'ocs' => [
+        ['root' => '/api', 'name' => 'jobs#getall', 'url' => '/ocjobs/list', 'verb' => 'GET'],
+    ],
 ];
