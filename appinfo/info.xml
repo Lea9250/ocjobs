@@ -14,10 +14,4 @@
     <dependencies>
         <nextcloud min-version="15" max-version="21"/>
     </dependencies>
-    <navigations>
-        <navigation>
-            <name>OC Jobs</name>
-            <route>ocjobs.page.index</route>
-        </navigation>
-    </navigations>
 </info>

@@ -55,7 +55,7 @@
 		}
 	}
 
-    // TEST : curl -X GET http://admin:password@localhost/nextcloud/ocs/v1.php/cloud/apps/notestutorial -H "OCS-APIRequest: true"
+	
      /**
       * @NoAdminRequired
       * @NoCSRFRequired
@@ -63,8 +63,6 @@
       * @param string $content
       */
     public function getAll() {
-/*         $serviceResponse = $this->service->create($title, $content, $this->userId); */
-        // returns data alert style
         $query = $this->connection->getQueryBuilder();
 		$query->select('*')
 			->from('jobs');
