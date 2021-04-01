@@ -10,6 +10,7 @@
 
 // curl -X GET http://admin:password@localhost/nextcloud/ocs/v1.php/api/ocjobs/list -H "OCS-APIRequest: true"
 
+// jobs#getall > getAll method from JobsController will retrieve all jobs, url can be changed to anything
 return [
     'ocs' => [
         ['root' => '/api', 'name' => 'jobs#getall', 'url' => '/ocjobs/list', 'verb' => 'GET'],

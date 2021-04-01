@@ -4,7 +4,6 @@
  use OCP\IRequest;
  use OCP\AppFramework\Controller;
  use OCP\IDBConnection;
- use OCP\BackgroundJob\JobList;
 
  use OCP\AppFramework\Http;
  use OCP\AppFramework\Http\DataResponse;
@@ -21,6 +20,7 @@
     }
 
      /**
+	  * Retrieve all job from oc_jobs table
       * @NoAdminRequired
       * @NoCSRFRequired
       */
@@ -29,10 +29,11 @@
 		$query->select('*')
 			->from('jobs');
         $result = $query->execute();
+		// better use fetchAll than fetch loop
 		$jobs = $result->fetchAll();
         $result->closeCursor();
         // DataResponse outputs json array
 		return new DataResponse($jobs);
     }
 
- }
+ } 
