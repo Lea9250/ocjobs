@@ -21,7 +21,6 @@
 
      /**
 	  * Retrieve all job from oc_jobs table
-      * @NoAdminRequired
       * @NoCSRFRequired
       */
     public function getAll() {
