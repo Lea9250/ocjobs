@@ -29,7 +29,6 @@
 		$query->select('*')
 			->from('jobs');
         $result = $query->execute();
-		// better use fetchAll than fetch loop
 		$jobs = $result->fetchAll();
         $result->closeCursor();
         // DataResponse outputs json array
