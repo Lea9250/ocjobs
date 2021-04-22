@@ -4,14 +4,14 @@
     <id>ocjobs</id>
     <name>OC Jobs</name>
     <summary>OC Jobs</summary>
-    <description><![CDATA[OC Jobs]]></description>
-    <version>0.0.1</version>
+    <description lang="en">This simple app allows admin users to retrieve background jobs data via API calls. To do so, a new route is created to send back a json output containing all jobs informations from oc_jobs table. See README file for more infos.</description>
+    <version>1.0</version>
     <licence>agpl</licence>
     <author mail="lea.droguet@factorfx.com" >Léa Droguet</author>
     <namespace>OcJobs</namespace>
     <category>tools</category>
-    <bugs>http://localhost/nextcloud/</bugs>
+    <bugs>https://github.com/Lea9250/ocjobs/issues</bugs>
     <dependencies>
-        <nextcloud min-version="15" max-version="21"/>
+        <nextcloud min-version="20" max-version="21"/>
     </dependencies>
 </info>
